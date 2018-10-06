@@ -8,6 +8,10 @@
 
 // Now install Express in the QuizBase directory and save it in the dependencies list. For example:
 	$ npm install express --save
+// Install opn
+	$ npm install opn --save
+// To install temporarily and not save in the dependency list
+	$ npm install frameworkName or $ npm install frameworkName --nosave
 
 // Run the app with the following command:
 	$ node main.js

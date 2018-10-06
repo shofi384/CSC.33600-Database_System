@@ -9,3 +9,5 @@ app.listen(port, () => console.log(`Example app listening on port ${port}!`))
 
 // opens the url in the default browser 
 opn('http://localhost:3000/');
+// specify the app to open in 
+//opn('http://localhost:3000/', {app: 'firefox'});
