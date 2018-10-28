@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>QuizeBase</title>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous">
+  <!-- <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+      crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" media="screen" href="../src/index.css" />
+
+  <link rel="icon" href="img/logo.png">
+</head>
+
+<body>
+  <noscript>
+    You need to enable JavaScript to run this app.
+  </noscript>
+
+  <!-- Navbar -->
+  <header>
+    <div class="row">
+      <div class="logo">
+        <img src="img/logo.png">
+      </div>
+      <ul class="main-nav">
+        <li><a href="#about">About</a></li>
+        <li><a href="#theTeam">The Team</a></li>
+        <li><a href="#fakeRoot">Topics</a></li>
+        <li><a href="#signUp">Login/Register</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <div id="root">
+  <section class="about" id="about">
+    <h2 class="about-header text-center">About</h2>
+    <p class="about-description body-text">
+      With the plan to make studying more efficient, without the physical handwritten cards, we developed this study platform for individuals from all educational stages. It will allow users to share their notes and study for their classes. QuizBase gives its student users of all ages the ability to create various decks/sets. Each set consists of a number of flashcards which hold information about a specific topic. It provides an open space to students where they can create their own study groups and share various types of materials in decks of cards.
+    </p>
+  </section>
+
+  <section class="theTeam" id="theTeam">
+    <h2 class="theTeam-header text-center">The Team</h2>
+    <div class="container">
+
+      <figure>
+        <div class="col-md-3">
+          <img class="center" src="img/shofi.png">
+          <p class="team-text">
+            Shofiqur Rahman<br>
+            Lead Architect, Senior Student<br>
+            Department of Computer Science, The City College of New York<br>
+          </p>
+        </div>
+      </figure>
+      <figure>
+        <div class="col-md-3">
+          <img class="center" src="img/connie.png">
+          <p class="team-text">
+            Connie Wu<br>
+            System Designer, Junior Student<br>
+            Department of Computer Science, The City College of New York<br>
+          </p>
+        </div>
+      </figure>
+      <figure>
+        <div class="col-md-3">
+          <img class="center" src="img/bashir.png">
+          <p class="team-text">
+            Bashir Ahamed<br>
+            Front-End Developer, Senior Student<br>
+            Department of Computer Science, The City College of New York<br>
+          </p>
+        </div>
+      </figure>
+      <figure>
+        <div class="col-md-3">
+          <img class="center" src="img/youssuf.png">
+          <p class="team-text">
+            Samuel Yousuf<br>
+            Database Administrator, Senior Student<br>
+            Department of Computer Science, The City College of New York<br>
+          </p>
+        </div>
+      </figure>
+
+    </div>
+  </section>
+
+  <!-- Learn about this code on MDN: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/submit -->
+  <form id="signIn" class="logging">
+    <div>
+      <label class="formElement">Enter your email:</label>
+      <input id="signInEmail" class="formElement" type="text" name="text">
+      <button onclick="signIn()">Sign In</button>
+    </div>
+  </form>
+  <form id="signUp" class="logging">
+    <div>
+      <label class="formElement">Enter your email:</label>
+      <input id="signUpEmail" class="formElement" type="text" name="text">
+      <button onclick="signUp()">Sign Up</button>
+    </div>
+  </form>
+</div>
+<!-- id="root" ends here -->
+
+<div id="fakeRoot" style="margin-bottom: 30px"></div>
+
+</body>
+
+  <footer>Built by Team @QuizBase 2018</footer>
+
+  <script type="text/javascript">
+    function signIn() {
+      console.log(document.getElementById("signInEmail").value);
+    }
+    function signUp() {
+      console.log(document.getElementById("signUpEmail").value);
+    }
+  </script>
+
+</html>
