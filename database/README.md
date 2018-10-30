@@ -17,6 +17,3 @@ Name: sql9263174
 Username: sql9263174  
 Password: xMEalvnh1H  
 Port number: 3306  
-
-
-GRANT [type of permission] ON [database name].[table name] TO '[username]'@'[host name or IP address]';
