@@ -1,8 +1,8 @@
 -- creating the database QuizBase
-Create database QuizBase;
+CREATE DATABASE quizbase;
 
 -- changing the database to Quizbase
-use QuizBase;
+use quizbase;
 
 -- creating School table
 CREATE TABLE School(

@@ -1,36 +1,22 @@
 # To configure database connectivity on local machine  
-Have MySQL workbench installed (oracle version)  
+Have MySQL installed  
+Run 'mysqld' command to run the server  
+Run 'mysql -u root -p' to access DBMS as root user  
+Run "CREATE USER 'username'@'localhost' IDENTIFIED BY 'password';" to create a DBMS user  
+Now, in mysql environment, run "CREATE DATABASE dbname"  to create a database  
+Run "GRANT ALL PRIVILEGES ON dbname.* TO 'username'@'localhost';" to grant user access to the database dbname  
+> Now, log out and log in as the new created user: run mysql -u username -p  
+Run a sql script as "mysql -u username -p < script.sql"  
+Or alternatively from MySQL environment "source ../createSchemas.sql"
+and . . . play around, we have all the scripts needed!  
 
-
-open CSC 336 project and populate sql scripts and execute them in that order
-to create QuizBase database.
-
-3- there is an example_node_project in a zip file.
-unzip the file, you do not even need to do "npm install" command, just
-do "npm start".
-
-note: before running the node proejct make sure you go to your_app.js and change
-the password you set for the root user of server of mysql.
-
-4-if you have a problem conncting to the database after doing "npm start", do not
-freak out. this is a common problem because of encrypted password protocol. 
-what to do is open file pass.sql in mysql workbench, then type in your password in place where it says
-"your password goes here" and run the script. it should solve the problem.
-
-5- after the server launches and connects to database successfully,
-test the example of methods i have done(methods like update, insert, delete,
-delete range and so on).
-
-6- please try to integrate that code successfully to your front end (using React configuration)
-
-note: this example node project only has methods for school schema, other methods of
-other schemas in the database will follow if you confirmed that the code is working after integrating it
-with the front end code you already have.
-
-
-# Database Server Details
+# Database Server Details  
+> Hosted on https://www.freemysqlhosting.net/  
 Server: sql9.freemysqlhosting.net  
 Name: sql9263174  
 Username: sql9263174  
 Password: xMEalvnh1H  
 Port number: 3306  
+
+
+GRANT [type of permission] ON [database name].[table name] TO '[username]'@'[host name or IP address]';

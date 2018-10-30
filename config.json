@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "quizbase",
+    "password": "quizbase",
+    "database": "quizbase",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "quizbase",
+    "password": "quizbase",
+    "database": "quizbase",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "quizbase",
+    "password": "quizbase",
+    "database": "quizbase",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}
